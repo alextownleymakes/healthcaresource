@@ -159,7 +159,7 @@ nav li {
 #header {
     display: flex;
     justify-content: center;
-    background: url('/images/hero_image.jpg') no-repeat center / cover ;
+    background: url('../images/hero_image.jpg') no-repeat center / cover ;
 }
 
 #header-content {
@@ -267,7 +267,7 @@ nav li {
     bottom: 0px;
     left: 0px;
     opacity: 0.2;
-    background-image: url('/images/accessory-image-1.jpg');
+    background-image: url('../images/accessory-image-1.jpg');
     z-index: 0;
 }
 
@@ -280,7 +280,7 @@ nav li {
     bottom: 0px;
     left: 0px;
     opacity: 0.2;
-    background-image: url('/images/accessory-image-2.jpg');
+    background-image: url('../images/accessory-image-2.jpg');
     z-index: 0;
 }
 
