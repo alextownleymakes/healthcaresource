@@ -388,20 +388,20 @@ nav {
 /* FOOTER */
 /**********/
 
-footer {
+footer>div {
     background-color: #0475BA;
-    display: flex;
-    flex-wrap: wrap;
     color: #fff;
+    text-align: center;
 }
-footer .upper {
+footer .container-fluid {
     align-items: center;
-    display: flex;
-    padding: 15px 15%;
+    padding: 15px 18%;
+    color: #fff !important;
 }
-footer .socials {
-    justify-content: right;
-    text-align: right;
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer img {
@@ -417,7 +417,7 @@ footer .copyright {
     font-size: 12px;
 }
 
-.icons {
+.icons, .logo {
     text-align: center;
 }
 .icons img {
