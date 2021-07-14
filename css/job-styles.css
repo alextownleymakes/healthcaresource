@@ -106,6 +106,7 @@ nav img {
 nav ul {
     display: flex;
     vertical-align: middle;
+    margin-bottom: 4px;
 }
 
 nav li {
