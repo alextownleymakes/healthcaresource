@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woburn Hospital</title>
+
+    <link rel="stylesheet" href="/css/job-styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/flb4nxm.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a72aba043c.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav id="primary">
+        <a href="/"><img src="/images/logo.png"></a>
+        <ul>
+            <li>
+                <a href="/job-search.html">Search Jobs</a>
+            </li>
+            <li>
+                <a href="#">Saved Jobs</a>
+            </li>
+            <li>
+                <a href="#">Login</a>
+            </li>
+            <li>
+                <a href="#">Test Link</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="header">
+        <div id="header-content" class="row">
+            <div class="col-lg-5 col-md-4 col-sm-12 col-xs-12" >
+                <input placeholder="Keyword, Job Title, Skills" />
+            </div>
+            <div class="col-lg-5 col-md-4 col-sm-12 col-xs-12" >
+                <input placeholder="Enter a location" />
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12" >
+                <div class="btn btn-primary">Find Jobs</div>
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        <div class="content-block first row">
+            <div class="col-lg-3 col-md-5 col-sm-12 col-xs-12 dept-col">
+                <div id="search-constant">
+                    <h6>Refine Your Search</h6><a href="#">Clear All</a>
+                </div>
+                <div class="filter-container">
+                    <p style="display: inline">Department</p><span id="dept-acc">_</span>
+                    <div id="dept-list" class="show-list">
+
+                    </div>
+                </div>
+                <div class="filter-container">
+                    <p style="display: inline">City</p><span id="city-acc">+</span>
+                    <div id="city-list">List items would be in here.</div>
+                </div>
+                <div class="filter-container">
+                    <p style="display: inline">State</p><span id="state-acc">+</span>
+                    <div id="state-list">List items would be in here.</div>
+                </div>
+                <div class="filter-container">
+                    <p style="display: inline">Job Family</p><span id="fam-acc">+</span>
+                    <div id="fam-list">List items would be in here.</div>
+                </div>
+                <div class="filter-container">
+                    <p style="display: inline">Facility</p><span id="fac-acc">+</span>
+                    <div id="fac-list">List items would be in here.</div>
+                </div>
+                <div class="filter-container">
+                    <p style="display: inline">Schedule</p><span id="sched-acc">+</span>
+                    <div id="sched-list">List items would be in here.</div>
+                </div>
+                <div class="filter-container">
+                    <p style="display: inline">Shift</p><span id="shift-acc">+</span>
+                    <div id="shift-list">List items would be in here.</div>
+                </div>
+                <div id="talent-network">
+                    <p>Interested in working for Woburn Hospital?</p>
+                    <p>Take the first step by joining our Talent Network today!</p>
+                    <div class="btn btn-secondary">Join our Talent Network</div>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-7 col-sm-12 col-xs-12">
+                <h2 style="margin-left: 5px; color: #555; margin-bottom: 20px;">Job Search Results</h2>
+                <div id="results-container"></div>
+                <div id="map"></div>
+                <div id="list-results"></div>
+                <div id="pager">
+                    <span>Page</span><input type="text" class="curpage" value="1"/><span>of 10</span>
+                    <span id="prevpage" class="fas fa-chevron-left btn-tertiary"></span>
+                    <span id="nextpage" class="fas fa-chevron-right btn-primary"></span>
+                </div>
+                <div id="cant-find" class="row">
+                    <div class="col-lg-8 col-md-12 col-s-12 col-xs-12">
+                        <h5>Can't find the job you're looking for?</h5>
+                        <p>Join our Talent Network to opt-in to all our current and future opportunities!</p>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-s-12 col-xs-12">
+                        <div class="btn btn-secondary">
+                            Join Our Talent Network
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="row">
+            <div class="row upper">
+                <div class="col-lg-9 col-md-6 col-sm-6 col-xs-6 footer-content footer-logo"><img src="/images/logo-white.png"></div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 footer-content socials">
+                    <div class="icons">
+                        Follow Us!<br/>
+                        <img src="/images/f.png"></img>
+                        <img src="/images/t.png"></img>
+                        <img src="/images/yt.png"></img>
+                        <img src="/images/l.png"></img>
+                    </div>
+                </div>
+            </div>
+            <div class="row copyright">©2019 Woburn Hospital<br />
+        </footer>
+    </div>
+
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKxkAgOFGUN9p74KnqmI9FIkMCfdv9sN4&callback=initMap&libraries=&v=weekly"
+    async></script>
+
+
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/job-script.js"></script>
+
+</body>
+
+</html>

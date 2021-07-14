@@ -1,0 +1,445 @@
+* {
+    box-sizing: border-box;
+    font-family: "bilo";
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+h2 {
+    font-size: 64px;
+}
+
+h3 {
+    font-size: 52px;
+}
+
+h4 {
+    font-size: 72px;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+}
+
+[class^="col-"] {
+    display: inline-block; 
+    padding: 15px;
+}
+
+a {
+    color: #999 !important;
+    text-decoration: none !important;
+    transition: .3s;
+}
+
+a:hover {
+    color: #555 !important;
+    text-decoration: none;
+}
+
+.btn {
+    min-width: 150px;
+    width: auto;
+    text-align: center;
+    border-radius: 4px;
+    padding: 6px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: #eee;
+    background-color: #0475BA !important;
+}
+
+.btn-primary:hover {
+    background-color: #09588a !important;
+}
+
+.btn-secondary {
+    color: #eee !important;
+    background-color: #1b3b5e !important;
+}
+
+.btn-secondary:hover {
+    color: #eee !important;
+    background-color: #23568d !important;
+}
+
+.btn-tertiary {
+    color: #eee !important;
+    background-color: #555 !important;
+}
+
+.btn-tertiary:hover {
+    color: #eee !important;
+    background-color: #222 !important;
+}
+
+.btn-quad {
+    color: #555 !important;
+    background-color: #eee !important;
+}
+
+.btn-quad:hover {
+    color: #222 !important;
+    background-color: #ccc !important;
+}
+
+/*******/
+/* NAV */
+/*******/
+
+nav#primary {
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    vertical-align: bottom;
+}
+
+nav ul {
+    display: flex;
+    vertical-align: middle;
+}
+
+nav li {
+    list-style-type: none;
+    font-size: 1.5rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 30px;
+
+    display: flex; 
+    align-items: center;
+}
+
+#primary a {
+    line-height: 10px;
+    text-transform: capitalize;
+}
+
+#primary img {
+    width: 250px;
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        text-align: center;
+        display: block;
+    }
+    
+    nav a {
+        display: block !important;
+    }
+
+    nav ul {
+        text-align: center;
+        margin: auto;
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    nav li {
+        margin: 0;
+    }
+
+    footer {
+        text-align: center !important;
+    }
+
+}
+
+@media only screen and (min-width: 769px) {
+    nav#primary {
+        display: flex;
+    }
+
+    footer {
+        text-align: center !important;
+    }
+}
+
+/**********/
+/* HEADER */
+/**********/
+
+nav {
+    background-color: #f6f6f6;
+}
+
+#talent-network p {
+    margin: 2px 0 !important;
+}
+
+/***********/
+/* CONTENT */
+/***********/
+
+.content-block {
+    padding: 50px 10px;
+    display: flex;
+}
+
+.first {
+    padding: 8px 10px;
+}
+
+
+
+/*********/
+/* FIRST */
+/*********/
+
+#details {
+    padding: 0 12px;
+}
+
+.first .details-col {
+    padding: 0 30px !important;
+}
+
+.result-title {
+    font-size: 42px !important;
+    margin: 0 0 8px !important;
+    padding: 0 !important;
+    color: #777;
+}
+
+.result-card {
+    width: 100%;
+    padding: 0;
+    text-transform: capitalize;
+    /* display: flex; */
+}
+
+.result-card p {
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.featured-job .place {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.featured-job i {
+    font-size: 14px;
+}
+.featured-job p {
+    max-width: 90%;
+}
+
+.result-row * {
+    display: inline;
+    margin-right: 5px;
+    color: #999;
+}
+
+#details-btns * {
+    margin-bottom: 8px;
+    margin-left: 8px;
+}
+
+#job-details p {
+    font-size: 16px;
+    color: #555;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+#job-details h6 {
+    color: #555;
+    font-weight: 600;
+}
+
+#job-details sub {
+    color: #777;
+}
+
+.share {
+    display: flex;
+    align-items: center;
+}
+.share h6 {
+    display: inline;
+    color: #aaa !important;
+    margin-bottom: 0;
+    font-weight: 500 !important;
+}
+
+.share img {
+    max-width: 16px;
+}
+
+.share a {
+    font-size: 0;
+    margin-left: 8px;
+}
+
+
+
+#related-sidebar {
+    border: 1px solid #f6f6f6;
+    padding: 0px;
+}
+
+.related-title {
+    font-size: 20px;
+    color: #777;
+    background-color: #eee;
+    width: 100% !important;
+    padding: 12px;
+}
+
+.related-row {
+    padding: 8px 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #555;
+    border-top: 1px solid #e9e9e9;
+}
+
+.related-row a {
+    color:#0475BA !important;
+    cursor: pointer;
+    display: block;
+}
+
+.related-row a:hover {
+    color:#1b3b5e !important;
+    cursor: pointer;
+}
+
+.related-row i {
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.related-row p {
+    display: inline;
+    font-size: 16px;
+}
+
+.apply {
+    text-align: right;
+}
+
+
+
+
+/**********/
+/* SECOND */
+/**********/
+
+.result-card .pd {
+    text-align: right;
+}
+
+.result-card i {
+    font-size: 14px;
+}
+.result-card p {
+    max-width: 90%;
+}
+
+.result-row * {
+    display: inline;
+    margin-right: 5px;
+    color: #999;
+}
+
+
+#talent-network {
+    border: 2px #eee solid;
+    border-radius: 4px;
+    margin: 30px 0;
+    padding: 16px;
+}
+
+#talent-network p {
+    font-size: 16px;
+    color: #777;
+}
+
+#talent-network .btn {
+    margin-top: 15px;
+}
+
+
+/**********/
+/* FOOTER */
+/**********/
+
+footer {
+    background-color: #0475BA;
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+}
+footer .upper {
+    align-items: center;
+    display: flex;
+    padding: 15px 15%;
+}
+footer .socials {
+    justify-content: right;
+    text-align: right;
+}
+
+footer img {
+    width: 100px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+footer .copyright {
+    justify-content: center;
+    background-color: #1b3b5e;
+    padding: 15px 0;
+    font-size: 12px;
+}
+
+.icons {
+    text-align: center;
+}
+.icons img {
+    cursor: pointer;
+    width: 30px;
+    /* background-color: #000; */
+    border-radius: 50%;
+    transition: .3s;
+}
+
+footer img:hover {
+    opacity: .7;
+}
+
+
+@media only screen and (min-width: 769px) {
+    #details-btns {
+        text-align: right;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #details-btns {
+        text-align: center;
+    }
+}
